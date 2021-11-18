@@ -12,7 +12,6 @@ html {
 *::before {
   box-sizing: inherit;
 }
-
 :root {
   /* Background colors */
   --mainBg: hsl(233, 47%, 7%);
@@ -24,7 +23,6 @@ html {
   --slightlyTransparentWhite: hsla(0, 0%, 100%, 0.75);
   --statHeading: hsla(0, 0%, 100%, 0.6);
 }
-
 body {
   font-size: 15px;
   font-weight: 400;
@@ -34,55 +32,45 @@ body {
 }
 main {
   width: 100vw;
-  height: 100vh;
   background-color: var(--mainBg);
 }
-
 .card {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 69.5rem;
   height: 28rem;
-  margin: 10.0625rem 8.3125rem 10.0625rem 8.3125rem ;
+  margin: 8.0625rem 6.3125rem 8.0625rem 6.3125rem ;
 }
-
 .text-card {
   background-color: var(--cardBg);
   border-radius: 0.4375rem 0 0 0.4375rem ;
-
   padding-top: 4.25rem;
   padding-left: 4.625rem;
   padding-right: 7.4375rem;
   padding-bottom: 4.0625rem;
 }
-
- h1{
+h1{
   color: var(--white);
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
-
 .enphasis{
   color:var(--softViolet)
 }
-
 .text-card p{
   line-height: 1.8;
 }
-
 .counter-component{
   display: flex;
   margin-top: 4.875rem;
   flex-wrap: wrap;
   gap:3.3125rem;
 }
-
 .counter {
   text-transform: uppercase;
 }
-
 .counter h2{
   color:var(--white);
   font-weight: 700;
@@ -91,31 +79,27 @@ main {
   font-family: 'Lexend Deca', sans-serif;
   color:var(--statHeading);
 }
-
 .image-card{
   position: relative;
   height: 28rem;
   background-color:var(--softViolet);
   border-radius: 0 0.4375rem 0.4375rem 0 ;
 }
-
 img{
   height: 100%;
   mix-blend-mode: multiply;
 }
 
-@media (max-width:400px) {
+@media (max-width:900px) {
   body{
     font-family: 10px;
-  }
-  
+  }  
   .card{
     flex-direction: column-reverse;
     width: 20.5rem;
     max-height: 48.8125rem;
     margin: 5.375rem 1.4375rem 5.375rem 1.4375rem;
   }
-
   .text-card{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -123,7 +107,6 @@ img{
     padding-top: 2.5rem;
     border-radius:0 0 0.4375rem 0.4375rem;
   }
-
   h1, .text-card p, .counter{
     text-align: center;
   }
@@ -134,8 +117,7 @@ img{
     gap: 1.875rem;
 
     margin-top: 2.9375rem;
-  }
-  
+  }  
   .image-card{
     width: 20.5rem;
     border-radius: 0.4375rem 0.4375rem 0 0;
